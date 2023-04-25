@@ -17,19 +17,37 @@
     border: 10px solid transparent;
     padding: 10px;
     border-image: url(../imgs/border2.png) 20 round;
-    margin: 30px;   
+    margin: 30px;
 }
+
 .borderimg3 {
     border: 50px solid transparent;
     padding: 20px;
     border-image: url(../imgs/border3.png) 50 round;
-    margin: 30px;  
-    height: 100px; 
+    margin: 30px;
+    height: 100px;
 }
+
 .borderimg4 {
     border: 20px solid transparent;
     padding: 20px;
     border-image: url(../imgs/cat1.png) 20 round;
-    margin: 30px;  
+    margin: 30px;
     /* height: 150px;  */
+}
+
+ul {
+    margin: 30px;
+}
+
+ul>li {
+    list-style-type: decimal;
+    list-style-position: outside;
+    list-style-position: inside;
+    list-style-image: url('../imgs/icon1.gif');
+    /* list-style: none;
+    list-style: upper-alpha inside; */
+}
+ul>li:hover {
+    list-style-image: url('../imgs/icon2.gif');
 }

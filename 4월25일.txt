@@ -126,3 +126,26 @@ repeat
 round
 space
 stretch
+
+width:initial
+
+- 목록스타일-
+list-style-image
+list-style-position
+list-style-type
+
+list-style:
+
+이미지불러오기, 폰트불러오기
+url('../imgs') 단위
+
+오후에는 풀다운네비게이션바
+드롭다운네비게이션바
+
+
+
+
+
+
+
+
