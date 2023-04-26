@@ -162,12 +162,36 @@ ul>li*5>a[href=#]{회사소개}
 ol>li*5>a[href=#]{인사말}
 
 [기본공식2]
-자식에 position:absolute를 주면
-부모에는 position:relative를 준다.
+자식에 position:absolute를 주면 부모에게 기준점을 잡고싶으면
+position:relative를 준다.
 
 float처리후 해제공식 5가지중..
 
+ul>li>a
+a-> absolute;
+ul 에 기준을 잡겠다.  ul->relative
+
+width:100%;  부모크기100%, 할아버지 100%
+
+
+1) 폴더작업->폴더압축
+2) html파일에 css코드를 같이 첨부
+3) 닷홈에 올려서 링크만보낼것인가?
+4) git 올리면 소스코드보는용도 ? -> 백업용으로 git-hub에 올리기
+
+
+
 
 https://border-image.com/
+
+
+
+
+
+
+
+
+
+
 
 
