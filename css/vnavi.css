@@ -9,14 +9,27 @@ ul a {    display: block;
     color: white !important;
     padding: 10px;
 }
-ol {    display: none; position: absolute;}
+ol {   position: absolute;      left:100%; top:0;    
+     width: 200px;      
+     opacity: 0;       visibility: hidden;     
+   }
+ol>li{ height:0;   opacity: 0;}
+ul>li:hover>ol{     opacity:1 ; visibility: visible;    
+    transition:1s;
+}
+ul>li:hover>ol>li{     height: 40px;     opacity: 1;
+    transition: 1s;        
+}
+
+
 ul li {    background-color: darkblue;}
-/* a태그의 글자는 자동상속이 안된다. */
 ul {    width: 200px;     margin: 30px;   text-indent: 10px;  }
 ul li:hover {    background: black;
     text-indent: 15px;    transition: 0.5s; }
-ul>li{ position: relative;}
-ul>li:hover>ol{ display: block; width:100%;  left:100%; top:0;  }
+
+    ul{ position: relative;}
+/* ul>li{ position: relative;} */
+
 ol>li{ background-color: teal;}
 
 /* ul>li:nth-child(1){border-bottom: 1px dotted white;}
@@ -27,13 +40,45 @@ ul>li:nth-child(4){border-bottom: 1px dotted white;} */
 ul>li:not(:last-child){ border-bottom: 1px dotted white; }
 /* dl을 숨겨놨다가 ol>li에 마우스 올리면 보여라 */
 dl{ display: none; position: absolute; }
-ol>li{ position: relative;}
+
+/* ol{ position: relative;} */
+/* ol>li{ position: relative;} */
 ol>li:hover>dl{ width:180px; display: block;
                lefT:100%; top:0;      }
 dl>dt, dl>dd{ padding:10px; background-color: orangered;}               
 dl>dt:hover, dl>dd:hover{ background-color: black;color:white;
-cursor: pointer;
+cursor: pointer;  }
+
+/* ol{ visibility: hidden;} */
+ol:hover{  visibility: visible;}
+
+
+/* 삼각형 불릿기호 달기 */
+
+ul>li>a{ position: relative;}
+ul>li>a::after{ content:''; display: block; position: absolute;
+ width:0; height:0; border:8px solid transparent;
+ right:0; top:10px;  border-left-color: gray;
 }
+ul>li>a:hover:after{ content:''; display: block; position: absolute;
+    width:0; height:0; border:8px solid transparent;
+    right:1px; top:9px;  border-left-color: white;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

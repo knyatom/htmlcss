@@ -126,16 +126,31 @@ css레이아웃방식
 3) flex
 4) grid
 
+카페-> CSS3구현 
+74번 게시판
 
-
-
-
-
+원래는 디자인에서 크기는 
+8의 배수로 가는 것이 원칙입니다.
 
 세로네비게이션바
 
+display:none -> block;
+       애니메이션 타임지정이 안된다.
+    transition:1s;
+opacity:0  ->  1
+height:0 -> 100px;
+ol-> height:0 해도 자식태그 li가
+보여요. overflow:hidden; 추가 해준다.
 
+ul -> relative 추가
+ ul>li-> relative -> 삭제
+  ol-> absolute -> relative는 공간을 차지한다.
+   ol>li -> relative -> 삭제
+   dl-> absolute
 
+자식이 absolute이고 부모가 absolute이어도 
+부모가 기준점이 될수 있다.
+-----------------------------------------------
 
 
 
