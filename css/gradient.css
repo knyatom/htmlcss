@@ -64,9 +64,7 @@ farthest-side  가장 먼 사이드     farthest-corner 가장 먼 코너 */
     background: repeating-radial-gradient(circle, white, white 10%,
     #ccc 10%, #ccc 20%    );  
   }
-
-h1{
-    font-size: 100px;
+h1{   font-size: 100px;
     background: linear-gradient(red 0%, blue 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip:text;
@@ -76,7 +74,7 @@ h1{
     /* 테두리에 그라디언트 적용하기 */
     border:20px solid red;
     border-image: linear-gradient(gold 0%, silver 50%, red 100%) 20 stretch;
-
+     -webkit-text-stroke:5px black;
 }
 
 
