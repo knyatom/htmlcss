@@ -2,8 +2,9 @@ CSS기본속성예제
 CSS구현요소 실습예제
 CSS레이아웃설계 예제
 CSS관련 기본공식
-CSS방법론
+CSS반응형웹
 ---------------------------------
+사이트맵
 웹폰트
 아이콘폰트+이모지 emoji
 ---------------------------
@@ -16,9 +17,7 @@ CSS로 외부요소 제어하기
 input:checked+div{ }
 3) 기타 애니메이션효과
 
-
 ㄱ+한자->탭
-
 
 이모지 emoji
 https://symbl.cc/kr/1F606/
@@ -71,26 +70,21 @@ margin:auto;
 구조, 레이아웃, 스타일을 구분하자.
 
 글자의 수직중앙정렬 line-height로 지정
-
 1)
  position: absolute;
     left:50%; top:50%;
     transform: translate(-50%, -50%);
-
 2) flex
  margin:auto; -> 자동가운데
-
 3) 
  display: flex;
     justify-content: center;
     align-items: center;
 
 모달팝업창 - modal popup 창
-
 수업자료(교안)-> CSS방법론
 
 a,b,c.de
-
 css-> reset.css
          index.css
         main.css
@@ -98,6 +92,21 @@ css-> reset.css
 -> css 를 하나로 통합 ->sass ->  common.css
 
 .w-100{ width:100%; }
+
+
+반응형웹
+스킵내비게이션
+
+
+width:%로 주고
+font-size: 2vw~3vw   
+min-width:
+max-width:
+
+
+
+
+
 
 
 
