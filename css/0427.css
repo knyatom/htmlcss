@@ -1,20 +1,21 @@
 label {
     border: 1px solid blue;
-    width: 20px;
+    width: 50px;
     display: block;
     margin: 20px;
-    cursor: pointer;
-    /* 마우스손모양 */
+    cursor: pointer;   
+    font-size: 30px;
+    text-align: center;
 }
 
-label span {
+/* label span {
     display: block;
     height: 3px;
     background: blue;
     border-radius: 2px;
     margin: 3px auto;
     width: 90%;
-}
+} */
 
 /* 박스제어하기 */
 ul {
@@ -59,4 +60,53 @@ div.sub {
     position: absolute;
     left: 100%;
     top: 0;
+}
+
+ul>li:hover {
+    background-color: lime;
+}
+
+ul>li:hover>a {
+    text-shadow: 1px 1px black;
+}
+
+div.sub {
+    display: none;
+    border: 1px solid red;
+}
+
+ul>li:hover>div.sub {
+    width: 700px;
+    /* display: block; */
+    display: flex;
+}
+
+/* 서브메뉴디자인 */
+div.sub section {
+    /* float: left; */
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+section>ol {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: gray;
+}
+
+section>h3 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+section img {
+    width: 100%;
+    display: block;
+    margin: auto
+}
+section{
+    margin:5px;
+    box-shadow: 2px 2px gray;
+    border-radius: 5px;
 }

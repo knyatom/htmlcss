@@ -23,31 +23,81 @@ input:checked+div{ }
 이모지 emoji
 https://symbl.cc/kr/1F606/
 
+U+1F60A
+&#128522;
+\1F60A
+
+아이콘폰트 사용하기
+박스 가운데 정렬하기
+
+CSS강좌->21번게시판 ->icon_font
+
+xeicon
+https://fontawesome.com/
+http://xpressengine.github.io/XEIcon/
+
+1) CDN방식
+2) 다운로드
+3) 설치방식- node js
+
+개발도구에서 확인하기
+
+xeicon.css -> 코드정렬된 파일
+xeicon.min.css -> 압축파일 ->용량이 작다
+나중에 배포는 min파일로 하는것이 유리하다.
 
 
+https://m.gsshop.com/index.gs
 
 
+vw
+px -> vw 변환
 
+오후에는 쇼핑몰사이트 찾아보시고
+방금작업결과물 밑에 헤더부분만 작업해서 
+붙여넣기
 
+온라인쇼핑몰 찾아보기
+m.gsshop.com
+https://m.coupang.com/
 
+박스가운데 정렬하기
 
+margin:auto;
+*{ margin:0 auto;}
+        위아래마진은 0이고 
+        좌우는 auto ->가로가운데
 
+구조, 레이아웃, 스타일을 구분하자.
 
+글자의 수직중앙정렬 line-height로 지정
 
+1)
+ position: absolute;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);
 
+2) flex
+ margin:auto; -> 자동가운데
 
+3) 
+ display: flex;
+    justify-content: center;
+    align-items: center;
 
+모달팝업창 - modal popup 창
 
+수업자료(교안)-> CSS방법론
 
+a,b,c.de
 
+css-> reset.css
+         index.css
+        main.css
+        sub1, sub2, sub3
+-> css 를 하나로 통합 ->sass ->  common.css
 
-
-
-
-
-
-
-
+.w-100{ width:100%; }
 
 
 
