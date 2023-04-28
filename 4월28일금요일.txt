@@ -48,10 +48,67 @@ orientation:landscape  눞혔을때
 테블릿 2단
 모바일 1단
 그리드구조
+-----------------------------------
+
+flex 속성
+flex-direction:row/column
+               row-inverse/column-inverse
+row* 기본값
+
+부모 => display:flex;
+자식=>float
+
+flex-wrap:nowrap/wrap/wrap-reverse
+            줄안바꾸기/ 바꾸기
+
+
+flex-flow:row;
+flex-flow:column wrap;
+order:1/2/3  순서
+order:0  기본값
+
+flex-grow: 얼마나 늘일지
+flex-shrink : 얼마나 줄일지
+flex-basis : 기본 크기지정
+
+flex: 2 1 auto; 너비값을 사용
+flex: 2 1 0;     인수값을 사용
+    grow shrink basis
+
+flex:1; flex:2; flex:3
+width:20%;
+
+플래스 배치속성-수평정렬
+justify-content:
+flex-start*/flex-end/center
+space-between/space-around
+space-evenly
+
+수직정렬
+align-items:stretch*/flex-start/flex-end/
+center/baseline
+
+align-self:
+stretch*/flex-start/flex-end/
+center/baseline
+
+align-content: 여러줄 배치방법
+flex-start*/flex-end/center/space-between
+/space-around/space-evenly
+
+flex-wrap:wrap
 
 
 
 
+
+
+
+
+
+flex방식으로 레이아웃 설계
+
+------------
 flex
 transition
 animation
