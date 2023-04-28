@@ -1,0 +1,70 @@
+CSS기본속성예제
+CSS구현요소 실습예제
+CSS레이아웃설계 예제
+CSS관련 기본공식
+CSS반응형웹
+
+@import
+@font-face
+@keyframes
+@media
+
+wrap  -> pc
+container -> mobile
+
+h1태그도 하나
+@media
+@import
+
+screen.css
+print.css
+
+장비
+모바일, TV, 모니터,
+리더기,프린터, 지문인식기
+screen
+print
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+m.daum.net -> 마우스우클릭->소스보기
+상단에 viewport 검색 
+
+@media
+
+모바일 767px 
+          480px
+태블릿 768px
+데스크탑 960px/1024/1280px
+
+방향전환
+orientation:portrait  세웠을때
+
+orientation:landscape  눞혔을때
+
+
+웹페이지의 단구조로 분류
+데스크탑 3단
+테블릿 2단
+모바일 1단
+그리드구조
+
+
+
+
+flex
+transition
+animation
+table
+grid
+column
+@media
+아코디언
+풍선도움말
+탭메뉴
+와이어프레임
+사이트맵
+스킵내비게이션
+그리드시스템
+
+
