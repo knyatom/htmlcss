@@ -97,17 +97,59 @@ flex-start*/flex-end/center/space-between
 /space-around/space-evenly
 
 flex-wrap:wrap
+<header>
+  <h1> 사이트제목</h1>
+</header>
+<section>
+  <div></div>  <div></div>  <div></div>
+  <div></div>  <div></div>
+</section>
+<footer>
+  <h3> 푸터</h3>
+</footer>
+
+768px~1024px(1280px)1440px
+
+전체를 wrap이나 container 로 감싼다.
+px버젼에서는 wrap-> 1280px 
+태블릿이하에서는 wrap -> %나 100% , auto
 
 
+min-width: 작은거에서 큰거
+나머지 모바일
 
-
-
-
-
-
+max-width: 큰거에서 작은거
+나머지가 PC
 
 flex방식으로 레이아웃 설계
 
+오후에는 그리드 시스템과 
+페이지 만들기 실습
+
+그리드시스템
+그리드레이아웃
+정적그리드-px
+동적그리드-%
+반응형그리드-px+%
+
+@media
+768px~960px(1024px)
+모바일-> 1단-> 그리드 해제
+
+@media 외부에 스타일은 공통스타일(전역스타일)
+
+float:left
+display:flex
+display:grid
+
+1단 2단 3단 4단 6단 12단
+
+960기준 
+박스크기
+박스간격 = gutter 구터
+
+16 32, 64 128
+256기가 512
 ------------
 flex
 transition
@@ -124,4 +166,4 @@ column
 스킵내비게이션
 그리드시스템
 
-
+gridcalculator.dk

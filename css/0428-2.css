@@ -45,18 +45,10 @@ footer {
     }
 
     .wrap section>div {
-        width:32%;
-        /* flex: 1 1 32%; */
-        /* width:100px !important; */
+        width:32%;     
     }
 
-    section>div:nth-child(4) {
-        /* flex: 2 1 20%; */
-    }
-
-    section div:nth-child(5) {
-       /* flex:1 1 60%; */
+    section div:nth-child(5) {       
        flex: 2 2 0;
     }
-
 }
