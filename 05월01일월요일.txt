@@ -122,6 +122,35 @@ animation:
 제이쿼리 swiper.js 라이브러리 
            sticky, bxslider
 
+풀width슬라이드, 크기정해진슬라이드
+
+canvas
+  panel
+     img
+  버튼
+
+swiper.html
+swiperjs.com
+
+1) CDN
+2) 다운로드 
+3) 설치방식
+
+숙제: swiper에 사이트가셔서 자동슬라이드 옵션찾아서
+설정하기
+아래쪽 버튼동작하는 거 찾기
+
+API를 3part library
+1part ->원소유자, 2part -> 투자자
+3part->제3자
+
+swiper슬라이드
+bxslider 슬라이드 
+만들어서 올리기 ->
+
+
+
+
 
 
 

@@ -185,3 +185,4 @@ div:hover>h1 {
 #canvas>.panel{
     width:500px;
 }
+#canvas{ overflow: visible;}
