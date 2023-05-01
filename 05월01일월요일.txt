@@ -70,10 +70,57 @@ HTML태그만 복사하기
 }
 float해제되고 자식박스가 잘리지 않게처리
 
+CSS속성
+transition
+transform
+animation
+table
+column
 
+transition-duration: 시간
+transition-delay: 지연시간
+transition-property: 속성
+transition-timing-function: 변형함수
+ease-in/ease-out/ease-in-out/ease
+linear*
+점점빠르게/점점느리게/
+cubic-bezier.com
 
+transition:
 
+ background:gold url('../imgs/back1.png') no-repeat left top / cover ;
+                                                                                / size
 
+animation 속성
+animation-name:
+animation-duration:
+animation-dealy:
+animation-iteration-count:
+animation-play-state:
+animation-timing-function:
+animation-fill-mode:
+animation-direction:
+
+animation:
+
+키프레임개념
+0~100px 이동하고, 200px까지
+위로이동해라.
+
+@keyframes 이름{
+  0{ }
+  50%{ }
+  100%{ }
+}
+--------------------------------------
+이미지 슬라이드
+1) 자동슬라이드
+2) 좌우버튼슬라이드
+3) 롤링배너버튼슬라이드
+4) 터치슬라이드
+--------------------------------
+제이쿼리 swiper.js 라이브러리 
+           sticky, bxslider
 
 
 
