@@ -24,6 +24,26 @@ CSS구조로 설계
 
 aside.html
 
+폰트 ->D2Coding
+
++  ~ 형제선택자로 제어
+> 자식이나 자손으로 제어
+
+글로벌네비게이션바-global
+로컬네비게이션바-local
+
+구글웹폰트
+henny penny
+
+스킵네비게이션 장착
+
+탭키들어가는 a태그, button, input
+
+h1, p 태그는 탭키가 자동포커스되지 않지만
+tabindex="1" 라는 속성을 주면 포커스된다.
+
+<h1 tabindex="1"> welcome </h1>
+
 
 
 
