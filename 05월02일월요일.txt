@@ -71,11 +71,14 @@ translate3d(x,y,z)
 rotate3d
 scale3d(x,y, z)
 
+perspective 원근감 0~2000
+ transform-style: preserve-3d;
 
+backface-visibility: hidden;
 
+디버깅-유지보수
 
-
-
+skip navigation 추가하기
 
 
 
