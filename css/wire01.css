@@ -62,31 +62,18 @@ header nav {
     bottom: 10px;
 }
 
-.inner h1 {
-    border-right: 1px dashed;
-    line-height: 100px;
-    text-align: center;
-    width: 200px;
+.inner h1 {    border-right: 1px dashed;
+    line-height: 100px;    text-align: center;    width: 200px;
 }
 
-nav>ul {
-    position: relative;
-}
+nav>ul {    position: relative;}
 
-.sub {
-    display: none;
-    position: absolute;
-    width: 100%;
-    border: 1px solid;
-    box-sizing: border-box;
-    left:0;
-    background: white;
-}
-
-nav>ul>li:hover>.sub {
-    display: flex;
-}
-
-.sub>ol {
-    flex: 1;
-}
+.sub {    display: none;    position: absolute;
+    width: 100%;    border: 1px solid;    box-sizing: border-box;
+    left:0;    background: white;}
+nav>ul>li:hover>.sub {    display: flex;}
+.sub>ol {     flex: 1;}
+footer .inner{ display: flex;}
+footer h3{ width:200px; border: 1px solid; text-align: center;}
+footer .bottom{width:100%;}
+footer .bottom *{height:50%; border-bottom: 1px solid;}
