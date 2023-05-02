@@ -150,8 +150,8 @@
     <!-- Slides -->
     <div class="swiper-slide"><img src="./imgs/back1.png"></div>
     <div class="swiper-slide"><img src="./imgs/back1.png"></div>
-    <div class="swiper-slide"><img src="./imgs/back1.png"></div>
-    ...
+    <div class="swiper-slide"><img src="./imgs/back2.png"></div>
+
    </div>
    <!-- If we need pagination -->
    <div class="swiper-pagination"></div>
@@ -179,32 +179,36 @@
   </div>
  </footer>
  <script>
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+  const swiper = new Swiper('.swiper', {
+   slidesPerView: 1,
+   spaceBetween: 0,
+   slidesOffsetBefore: 0,
+   slideOffsetAfter: 0,
 
-  // If we need pagination
-  pagination: {
+   direction: 'horizontal',
+   loop: true,
+
+   // If we need pagination
+   pagination: {
     el: '.swiper-pagination',
-    clickable:true
-  },
-  autoplay:{
-   delay:2500,
-   disabbleOnInteration:false
-  },
+    clickable: true
+   },
+   autoplay: {
+    delay: 12500,
+    disabbleOnInteration: false
+   },
 
-  // Navigation arrows
-  navigation: {
+   // Navigation arrows
+   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+   },
 
-  // And if we need scrollbar
-  scrollbar: {
+   // And if we need scrollbar
+   scrollbar: {
     el: '.swiper-scrollbar',
-  },
-});
+   },
+  });
 
  </script>
 </body>
