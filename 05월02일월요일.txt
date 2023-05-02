@@ -86,8 +86,18 @@ skip navigation 추가하기
 
 sass 수업
 
+페이지가 많을때
+aa.css
+cd.css
 
+sass로작업-> common.css
+         gulp 
 
+livs sass 
 
-
+@for $i from 1 through 60 {
+    div:nth-child(#{$i}){
+        top:10px * $i;
+    }
+}
 
