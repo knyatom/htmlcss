@@ -56,10 +56,18 @@ ul{ display: table;}
 ul li{ display: table-cell; padding: 10px;}
                        td
 
+풍선도움말 예제
+스위치 예제
 
+fadeIn, fadeOut 형태로 보이게 하기
 
+http://knyatom2.dothome.co.kr
 
-
+컴포넌트 개념을 도입
+다른 레이아웃에 복붙했을때 그대로 사용해야 한다.
+<div style="position:relative" class="toolstip">
+ <div></div><div></div><div></div><div></div>
+</div>
 
 
 
