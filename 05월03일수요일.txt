@@ -13,6 +13,7 @@ column
 5월12일 까지
 CSS관련수업
 SASS, 부트스트랩
+transform 관련예제
 
 대상주식회사
 
@@ -69,7 +70,9 @@ http://knyatom2.dothome.co.kr
  <div></div><div></div><div></div><div></div>
 </div>
 
+부트스트랩
 
+버전5부터 제이쿼리5 지원안한데
 
 
 
