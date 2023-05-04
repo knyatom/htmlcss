@@ -103,8 +103,7 @@ ul ol {
     position: absolute;
     top: 101px;
     left: 0;
-    /* display:flex !important;
-    background: white; */
+    /* transform: translate(-300px,0px); */
 }
 ul>li:hover>ol{
     display: flex;
@@ -116,8 +115,8 @@ ul>li:hover>ol{
 /* navi 위치 수정하기 */
 nav{
     position: static;
-    /* transform: translate(300px, 10px); */
-    margin-left:400px; margin-top:20px;
+    transform: translate(300px, 10px);
+    /* margin-left:400px; margin-top:20px; */
     border:1px solid; 
 }
 /* 서브메뉴 위치조정하기 */

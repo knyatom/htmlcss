@@ -56,6 +56,19 @@ top:0; bottom:0 -> height:100%
 left:0;  right:0; top:0; bottom:0 
 -> width:100%, height:100%
 
+이벤트가 반응하는 영역과 
+css가 적용되는 영역은 다를수 있다.
+HTML 태그 -엘리먼트 요소
+자바스크립트 DOM- Node노드
+
+태그노드, 텍스트노드
+
+
+
+
+
+
+
 
 
 
