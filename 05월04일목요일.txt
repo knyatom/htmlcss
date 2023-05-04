@@ -60,11 +60,13 @@ left:0;  right:0; top:0; bottom:0
 css가 적용되는 영역은 다를수 있다.
 HTML 태그 -엘리먼트 요소
 자바스크립트 DOM- Node노드
-
 태그노드, 텍스트노드
+<h1> welcome</h1>
+태그 엘리먼트, 텍스트 엘리먼트
+h1-> 부모노드 parent node
+welcome ->자식노드 child node
 
-
-
+결과물 올리시면 됩니다.
 
 
 
