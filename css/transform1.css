@@ -106,11 +106,54 @@ div.item {    width: 200px;    height: 200px;
     position: absolute;  }
 body{ perspective: 1000px;}
 #viewport{transform-style: preserve-3d; }
-#wheel{transform-style: preserve-3d; left:40%; top:40%;
+#wheel{transform-style: preserve-3d; left:50%; top:10%;
 border:3px solid red; height:500px; }
-.item:nth-child(1){ transform: rotateY(0) translateZ(-200px);}
-.item:nth-child(2){ transform: rotateY(60deg) translateZ(-200px);}
-.item:nth-child(3){ transform: rotateY(120deg) translateZ(-200px);}
-.item:nth-child(4){ transform: rotateY(180deg) translateZ(-200px);}
-.item:nth-child(5){ transform: rotateY(240deg) translateZ(-200px);}
-.item:nth-child(6){ transform: rotateY(300deg) translateZ(-200px);}
+:root{    --widthA:200px;}
+/* root선택자에 변수 widthA를 선언한다. */
+.item:nth-child(1){ transform: rotateY(0) translateZ(var(--widthA));}
+.item:nth-child(2){ transform: rotateY(60deg) translateZ(var(--widthA));}
+.item:nth-child(3){ transform: rotateY(120deg) translateZ(var(--widthA));}
+.item:nth-child(4){ transform: rotateY(180deg) translateZ(var(--widthA));}
+.item:nth-child(5){ transform: rotateY(240deg) translateZ(var(--widthA));}
+.item:nth-child(6){ transform: rotateY(300deg) translateZ(var(--widthA));}
+
+/* 사진넣기*/
+.item:nth-child(1){
+    background: url('../imgs/kim1.png') no-repeat left top / cover;
+}
+.item:nth-child(2){
+    background: url('../imgs/lee1.png') ;
+    background-size: 100% 100%;
+}
+.item:nth-child(3){
+    background: url('../imgs/jang1.png') no-repeat left top / cover;
+}
+.item:nth-child(4){
+    background: url('../imgs/won1.png') no-repeat left top / cover;
+}
+.item:nth-child(5){
+    background: url('../imgs/song1.png') no-repeat left top / cover;
+}
+.item:nth-child(6){
+    background: url('../imgs/black1.png') no-repeat left top / cover;
+}
+.item:hover{ transition:1s; transform: rotate(0) scale(1.5);}
+
+/* 애니메이션 회전하기 */
+@keyframes myani {
+    from{ transform: rotateX(-5deg) rotateY(0deg);}
+    to{ transform: rotateX(-5deg) rotateY(360deg);}    
+}
+#wheel{  animation: myani 10s infinite alternate;
+border:10px double red; 
+box-shadow: 3px 3px 3px black, -3px -3px 3px black;
+}
+
+/* 변수를 --widthA -> 0 */
+.item{ left:-100px; top:100px;}
+
+
+
+
+
+
