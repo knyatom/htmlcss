@@ -31,6 +31,47 @@
   <label for="three" class="switch_label">Three</label>
   <div class="switch_indicator"> </div>
  </div>
+
+
+<h2> 이미지 좌우 및 수직 반전 시키자.</h2>
+ <img src="./imgs/won1.png">
+
+<h2> 진행바 만들기</h2>
+
+<section class="container">
+ <input type="radio" name="progress" id="first">
+ <label for="first" class="label">5%</label>
+ <input type="radio" name="progress" id="second">
+ <label for="second" class="label">25%</label>
+ <input type="radio" name="progress" id="sam">
+ <label for="sam" class="label">50%</label>
+ <input type="radio" name="progress" id="four">
+ <label for="four" class="label">75%</label>
+ <input type="radio" name="progress" id="five">
+ <label for="five" class="label">100%</label>
+ <div class="progress">
+  <div class="progress-bar"></div>
+ </div>
+</section>
+
+<style>
+/* 이미지 좌우반전 */
+img:hover{
+ transform: rotate(0deg);
+ transform: scaleX(-1);
+ /* 원점을 지나는수직축이 있는 대칭축을 의미 */
+ filter:FlipH;
+ transition: 1s;
+}
+/* 이미지 수직반전 */
+img:active{
+ transform: rotate(0deg);
+ transform: scaleY(-1);
+ /* 원점을 지나는 수평축이 있는 대칭축을 의미 */
+ filter:FlipV;
+ transition: 1s;
+}
+</style>
 </body>
 
 </html>
