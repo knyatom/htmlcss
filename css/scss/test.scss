@@ -1,287 +1,70 @@
-// 변수선언
-$color: red;
-$margin: 5px;
-$title-color: blue;
-
-#box1 {
-    color: $color;
-}
-
-#box2 {
-    margin: $margin;
-}
-
-h1 {
-    color: $title-color;
-}
-
-// 네스팅기법 nesting
-$font-size: 16px;
-$font-family: serif;
-
-body {
-    color: $title-color;
-
-    font: {
-        size: $font-size;
-        family: $font-family;
-    }
-}
-
-ul {
-    font-size: 20px;
-    background: silver;
-
-    a {
-        color: red;
-    }
-}
-
-// &  -> 자기 자신요소
-ul {
-    &>li {
-        border: 3px solid;
-        margin: 10px;
-    }
-
-    & {
-        border: 5px solid red;
-    }
-}
-
-$top: 30px;
-
-ul {
-    &>li {
-        border: 3px solid black;
-        margin: $top;
-
-        &:hover {
-            background: gold;
-        }
-    }
-
-    & {
-        box-sizing: border-box;
-    }
-}
-
-#box1 {
-
-    &,
-    &-title {
-        padding: 10px;
-    }
-}
-
-#box1 #box2 {
-    font-size: 20px;
-
-    &>a {
-        color: red;
-
-        &:hover {
-            color: blue;
-        }
-    }
-}
-
-.box1 {
-    .box2 {
-        .box3 {
-            padding: 20px;
-            background: lavender;
-        }
-    }
-}
-
-.box1 {
-    .box2 .box3 {
-        padding: 40px;
-        color: red;
-    }
-}
-
-// media 쿼리
-#box1 {
-    @media screen and (max-width:700px) {
-        font-size: 30px;
-        width: 50%;
-    }
-}
-
-@media screen and (max-width:700px) {
-    #box1 {
-        font-size: 30px;
-        width: 50%;
-    }
-}
-
-div.box3 {
+.switch {
+  position: relative;
+  width: 14rem;
+  padding: 0 1rem;
+  font-family: verdana;
+  &:before {
+    content: '  ';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3rem;
+    background: #000;
+    border-radius: 30px;
+  }
+  &__label {
+    display: inline-block;
+    width: 2rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: color 200ms ease-out;
     &:hover {
-        @media screen and (min-width:500px) {
-            background: blue;
-        }
+      color: white;
     }
-}
+  }
+  &__indicator {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: -.5rem;
+    left: 0;
+    background: blue;
+    border-radius: 50%;
+    transition: transform 600ms cubic-bezier(.02,.94,.09,.97),
+                background 300ms cubic-bezier(.17,.67,.14,1.03);
+    transform: translate3d(1rem,0,0);
+  }
 
-// @mixin 함수 , @include 함수명
-@mixin test {
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-}
-
-div {
-    @include test()
-}
-
-p {
-    float: left;
-    @include test();
-}
-
-@mixin clear {
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
+  input#one:checked ~ .switch__indicator {
+    background: PaleGreen;
+    transform: translate3d(1.2rem,0,0);
+  }
+  input#two:checked ~ .switch__indicator {
+    background: MediumTurquoise;
+    transform: translate3d(5.5rem,0,0);
+  }
+  input#three:checked ~ .switch__indicator {
+    background: PaleVioletRed;
+    transform: translate3d(10.6rem,0,0);
+  }
+  input[type="radio"] {
+    &:not(:checked),
+    &:checked {
+      display: none;
     }
+  }
 }
 
-div {
-    @include clear();
-}
+// Just for styling
 
-$border-color: blue;
-
-@mixin border($border-color) {
-    border: 1px solid $border-color;
-}
-
-span {
-    @include border($border-color)
-}
-
-span {
-    @include border(red);
-}
-
-@mixin box($w, $h) {
-    width: $w;
-    height: $h;
-}
-
-header {
-    @include box(10, 100);
-    border: 3px solid;
-}
-
-@mixin pBox($w, $h, $b) {
-    width:if(unitless($w), #{$w}px, $w);
-    height:if(unitless($h), #{$h}px, $h);
-    border-radius: if(unitless($b), #{$b}px, $b);
-}
-
-.box1 {
-    @include pBox(100, 50, 30);
-}
-
-.box2 {
-    @include pBox(100px, 50px, 30px);
-}
-
-// @extend
-%name {
-    font-size: 16px;
-    color: blue;
-}
-
-%name2 {
-    font-weight: bold;
-    background-color: gray;
-}
-
-@mixin name($bold, $color) {
-    font-weight: $bold;
-    background-color: $color;
-}
-
-.a {
-    @extend %name;
-    @include name(bold, gray);
-}
-
-.b {
-    @extend %name;
-    @extend %name2;
-    @include name(bold, gray);
-}
-
-.c {
-    @extend %name;
-    @extend %name2;
-}
-
-.fs30 {
-    font-size: 30px;
-}
-
-.fw {
-    font-weight: bold;
-}
-
-.z {
-    @extend .fs30, .fw;
-}
-%m0auto{
-    width:1200px;
-    margin:0 auto;
-}
-footer{
-    div{
-        @extend %m0auto;
-    }
-}
-.main{
-    div{
-        @extend %m0auto;
-    }
-}
-// 반복문
-@for $i from 1 through 5{
-    div:nth-child(#{$i}){
-        font-size: 10px * $i;
-    }
-}
-// {  } 보간문자
-@each $var in book, zoom, phone{
-    .ico_#{$var}{
-        background:url(imgs/#{$var}.png) ;
-    }
-}
-
-$heading:(h1:30px, h2:20px, h3:15px);
-@each $a, $b in $heading{
-    #{$a}{
-        font-size: $b;
-    }
-}
-
-// 조건문
-@mixin btn_radius($h, $radius:true){
-    height:$h;
-    line-height: $h;
-    @if $radius{
-        border-radius: $h / 2;
-    }@else{
-        border:3px solid red;
-    }
-}
-
-.btn{
-    @include btn_radius(30px, true)
-}
-.btn{
-    @include btn_radius(30px, false)
+body{
+  background: #333;  
+  color: #999;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left: -9rem;
+  margin-top:-3rem;
 }

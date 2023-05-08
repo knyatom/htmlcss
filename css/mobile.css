@@ -177,7 +177,6 @@ label.right {
     z-index: 100;    
 } */
 /* 패널구현하기-push 방식 */
-
 #panel {
     border: 3px solid;
     width: 400px;
