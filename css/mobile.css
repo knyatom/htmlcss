@@ -163,21 +163,31 @@ label.right {
     color: white;
 }
 
-/* 패널구현하기 */
-#panel {
+/* 패널구현하기-overlay방식 */
+/* #panel {
     border: 3px solid;
     width: 400px;
     padding: 10px;
-    /* position: absolute; */
-    position: relative;
-    /* left: -1500px; */
-    margin-left: -420px;
+    position: absolute;    
+    left: -1500px;
     transition: 1s;
-    /* top: 50px; */
+    top: 50px;
     height: 500px;
     background: gold;
-    z-index: 100;
-    /* float: left; */
+    z-index: 100;    
+} */
+/* 패널구현하기-push 방식 */
+
+#panel {
+    border: 3px solid;
+    width: 400px;
+    padding: 10px;    
+    position: relative;    
+    margin-left: -420px;
+    transition: 1s;    
+    height: 500px;
+    background: gold;
+    z-index: 100;    
 }
 
 html,
@@ -187,14 +197,14 @@ body {
 }
 
 #wrap {
-    /* float: left; */
-    /* width:calc(100% - 430px); */
-    flex: 2 1 0;
-    /* margin-left: -400px; */
+    flex: 2 1 0;    
 }
 
 #panel:target {
+    /* 푸시방식 */
     margin-left: 0;
+    /* 오버레이 */
+    left:0;
 }
 
 #panel a {
