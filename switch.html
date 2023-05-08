@@ -11,6 +11,28 @@
 </head>
 
 <body>
+<h1> 모달창 만들기</h1>
+<a href="#modal" class="btn">
+  <img src="./imgs/cat1.png" width="100">
+</a>
+<hr>
+<div id="modal">
+  <div class="modal-body">
+    <img src="./imgs/cat1.png" width="400" height="300">
+    <hr>
+    <a href="#" class="btn">닫기</a>
+  </div>
+</div>
+
+<h2> 모달팝업창이란?</h2>
+<p> 버튼이나 사진을 클릭했을 때 튀어나는 화면 
+modal popup 모달팝업이라고 하며, 라이트박스라고도 한다.
+modal은 독점적인.. 다른 컨텐츠는 선택이 안되고, 팝업창이
+화면 중앙에 위치하면, 일반적으로 배경색은 반투명 고정이
+보통이다.
+</p>
+
+<hr>
  <h1> 스위치 버튼 만들기</h1>
  <div class="switch">
   <input type="checkbox" id="sw1" class="input-on-off">
@@ -56,7 +78,7 @@
 
 <style>
 /* 이미지 좌우반전 */
-img:hover{
+h2+img:hover{
  transform: rotate(0deg);
  transform: scaleX(-1);
  /* 원점을 지나는수직축이 있는 대칭축을 의미 */
@@ -64,7 +86,7 @@ img:hover{
  transition: 1s;
 }
 /* 이미지 수직반전 */
-img:active{
+h2+img:active{
  transform: rotate(0deg);
  transform: scaleY(-1);
  /* 원점을 지나는 수평축이 있는 대칭축을 의미 */
