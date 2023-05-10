@@ -1,0 +1,77 @@
+/* 인터넷 레이아웃 */
+
+/* 헤더레이아웃 */
+header {
+ position: relative;
+ height: 150px;
+ width: 1000px;
+ margin: auto;
+}
+
+header h1 {
+ position: absolute;
+ left: 50px;
+ top: 20px;
+}
+
+header nav {
+ position: absolute;
+ right: 10px;
+ top: 50px;
+}
+
+/* 네비게이션메뉴 레이아웃 */
+header nav {
+ width: 450px;
+}
+
+header nav ul {
+ display: flex;
+}
+
+header nav ul>li {
+ flex: 1;
+}
+
+/* 서브메뉴 숨기기 */
+ul ol {
+ background: lightgray;
+ display: none;
+ position: absolute;
+ z-index: 2;
+}
+
+ul>li {
+ position: relative;
+}
+
+ul>li:hover ol {
+ display: block;
+ width: 100%;
+}
+
+/* 이미지슬라이드 레이아웃 */
+.img_slide {
+ height: 350px;
+ width: 1000px;
+ margin: auto;
+}
+
+.img_slide img {
+ height: 350px;
+ width: 1000px;
+}
+
+/* 컨텐츠 레이아웃 */
+.contents {
+ display: flex;
+ justify-content: space-between;
+ width:1000px; 
+ margin:0 auto;
+ text-align: center;
+}
+.contents>div{
+ flex:1; 
+ margin:20px;
+}
+
