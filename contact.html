@@ -13,7 +13,7 @@
  <div class="container-fluid">
 
   <h1> 문의하기</h1>
-  <form action="" method="get">
+  <form action="http://www.google.co.kr/search" method="get">
    <div class="row">
     <div class="col">
      <label for="name" class="col-form-label">이름</label>
@@ -21,14 +21,14 @@
     </div>
     <div class="col">
      <label for="email" class="col-form-label">이메일</label>
-     <input type="email" class="form-control" id="email" name="email">
+     <input type="email" class="form-control" id="email" name="email" autocomplete="true">
     </div>
    </div>
 
    <div class="row">
     <div class="col">
      <label for="textarea" class="col-form-label">보내실 말씀</label>
-     <textarea class="form-control" id="textarea" rows="10" name="likewords"></textarea>
+     <textarea class="form-control" id="textarea" rows="10" name="q"></textarea>
     </div>
    </div>
    <button type="submit" class="btn btn-primary mb-3 mt-3">제출</button>

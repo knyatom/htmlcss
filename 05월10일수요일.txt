@@ -48,6 +48,67 @@ contact.html
 REST full service
 CRUD
 
+window.open()
+
+javascript window.open
+
+method 메소드 , 
+행동
+function 함수
+
+고양이.먹다()
+객체.메소드()
+
+고양이가 생선을 먹는다.
+고양이.먹다("생선")
+object         인자, 매개변수
+
+
+window.close();
+----------------------------------------
+이름, 이메일, 
+보내실말씀 -> 키워드를 적고
+
+구글이나, 네이버, 다음에 검색어로 
+검색하게 하기
+---------------------------------------
+
+URL과 URI 그리고 URN에 대해서 조사해보자.
+URL/URI/URN의 차이점
+QueryString 쿼리스트링과 파라미터
+parameter
+
+파워포인트로 작성하기
+
+getParameter.
+param.
+getQueryString 
+q=html 
+name=lee
+key=value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
