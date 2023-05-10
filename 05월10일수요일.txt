@@ -14,3 +14,37 @@ sass
 CSS레이아웃 3번-> 인터넷센터
 
 ezenmr.step.or.kr에 수강신청하기
+
+https://via.placeholder.com/100
+https://swiperjs.com/
+
+
+자동슬라이드와
+롤버튼 기능 살리기
+
+픽사베이 - pixabay
+swiper slide에서 버튼 이미지 교체하기
+
+
+.swiper-button-prev{
+배경이미지처리하고
+}
+swiper-button-prev:after{
+ content:'' ; display:none;
+}
+
+
+ezenmr.step.or.kr에 수강신청하기
+
+function(){  }
+함수 -> 일을 행해라
+
+$('#close').hide();
+
+
+
+
+
+
+
+

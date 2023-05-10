@@ -64,37 +64,64 @@
 
  <div class="contents">
   <div class="notice">
-    <h2>공지사항</h2>
-    <table class="table">
-     <tr>
-      <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
-      <td>2018-04-10</td>
-     </tr>
-     <tr>
-      <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
-      <td>2018-04-10</td>
-     </tr>
-     <tr>
-      <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
-      <td>2018-04-10</td>
-     </tr>
-     <tr>
-      <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
-      <td>2018-04-10</td>
-     </tr>
-     <tr>
-      <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
-      <td>2018-04-10</td>
-     </tr>
-    </table>
+   <h2>공지사항</h2>
+   <table class="table">
+    <tr>
+     <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
+     <td>2018-04-10</td>
+    </tr>
+    <tr>
+     <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
+     <td>2018-04-10</td>
+    </tr>
+    <tr>
+     <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
+     <td>2018-04-10</td>
+    </tr>
+    <tr>
+     <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
+     <td>2018-04-10</td>
+    </tr>
+    <tr>
+     <td><a href="#">인터넷센터에서 12회 심포지움을 개체합니다.</a></td>
+     <td>2018-04-10</td>
+    </tr>
+   </table>
   </div>
   <div class="partner">
    <h2>Web Partner Site</h2>
    <div class="partner_info">
-    <a href="#"><img src="http://placekitten.com/400/250"></a>
+    <a href="#modal">
+     <img src="http://placekitten.com/400/250" id="imgModal">
+    </a>
    </div>
   </div>
  </div> <!-- contents end -->
+
+ <!-- 모달팝업창 -->
+ <div id="modal">
+  <div class="modal_inner">
+   <img src="http://placekitten.com/400/300">
+   <hr>
+   <button id="close">닫기</button>
+  </div>
+ </div>
+ <script>
+  var btn = document.getElementById('close');
+  var modal = document.getElementById('modal');
+  var imgModal = document.getElementById('imgModal');
+  // 그림을 클릭하면 modal창 보여라.
+  imgModal.onclick = function () {
+   modal.style.display = "block";
+  }
+
+  // 닫기버튼을 클릭하면 모달창이 닫혀라.
+  btn.onclick = function () {
+   modal.style.display = "none";
+   // modal에 css의 display를 none으로 지정한다.
+  }
+
+ </script>
 
  <div class="service">
   <div class="icons">
@@ -129,6 +156,7 @@
    <p> 사업장주소 : 서울시 여의도 청와대학교</p>
   </div>
  </footer>
+ 
  <script>
   const swiper = new Swiper('.swiper', {
    direction: 'horizontal',
@@ -138,7 +166,7 @@
    },
    pagination: {
     el: '.swiper-pagination',
-    clickable:true
+    clickable: true
    },
    navigation: {
     nextEl: '.swiper-button-next',
