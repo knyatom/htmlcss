@@ -73,6 +73,77 @@ JSON 과 XML 그리고 CGV 차이점
 오버로드
 스타크래프트
 
+for(var i=1; i<=10;i++){
+ 실행문
+}
+
+#{$i} -> #{1} -> 1
+
+자료구조
+list, map
+배열같은 자료들
+모아놓은 세트
+컬렉션 collection
+
+
+@while
+@function
+
+while(조건){
+  // 실행문
+}
+
+function(인수1, )
+$value -> 매개변수
+
+scale-below(20px, 16px)
+                인수, argument
+                인자
+아규먼트는 매개변수가
+전달하는 값
+
+함수가 값을 내보내는 명령어
+->return
+
+변수는 $ 달러
+예약어 if, while, function
+-> @
+@return
+
+사스 컴파일 경로 변경하기
+
+ctrl+ ,
+
+
+/dist/css
+
+
+
+Webpublishing
+->UI-UX(모바일)->99번게시판
+관광정보모바일웹페이지
+index.html, a.html 작업하세요.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

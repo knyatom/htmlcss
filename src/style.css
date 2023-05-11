@@ -183,7 +183,6 @@ body.dark .banner {
   width: 0;
   border-color: transparent;
   border-style: solid;
-  border-width: 2.5px;
   border-left-color: black;
 }
 
@@ -225,4 +224,43 @@ body.dark .banner {
 
 .color-circle:nth-child(5) {
   background: black;
+}
+
+.content-8 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-6 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-4 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-2 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.content-0 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.sub {
+  font-size: 7.8125px;
+}
+
+.sidebar {
+  margin-left: 64px;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
