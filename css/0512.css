@@ -1,0 +1,50 @@
+.multi {
+ /* column-count: 3; */
+ padding: 10px;
+ column-gap: 20px;
+ column-rule-color: red;
+ column-rule-style: solid;
+ column-rule-width: 5px;
+ column-rule: 5px dotted blue;
+ column-width: 120px;
+}
+
+/* .multi:hover p{
+ column-span: all;
+} */
+
+.charts {
+ display: flex;
+ justify-content: center;
+}
+
+svg {
+ width: 220px;
+ height: 220px;
+}
+
+svg circle {
+ /* 면색 */
+ fill: gray;
+ /* 선색 */
+ stroke: orange;
+ stroke-width: 20;
+
+ stroke-dasharray: 630;
+ stroke-dashoffset: 50;
+ stroke-linecap: round;
+}
+
+@keyframes line1 {
+ from {
+  stroke-dashoffset: 630;
+ }
+ to{
+ stroke-dashoffset: 100;
+ }
+}
+.chart circle{
+ animation: line1 3s alternate infinite;
+ animation: line1 3s forwards;
+}
+/* forwards는 애니메이션 끝에서 정지 */
