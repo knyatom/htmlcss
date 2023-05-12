@@ -21,6 +21,7 @@
 svg {
  width: 220px;
  height: 220px;
+ transform: rotate(-90deg);
 }
 
 svg circle {
@@ -29,9 +30,8 @@ svg circle {
  /* 선색 */
  stroke: orange;
  stroke-width: 20;
-
  stroke-dasharray: 630;
- stroke-dashoffset: 50;
+ stroke-dashoffset: 620;
  stroke-linecap: round;
 }
 
@@ -39,12 +39,68 @@ svg circle {
  from {
   stroke-dashoffset: 630;
  }
- to{
- stroke-dashoffset: 100;
+
+ to {
+  stroke-dashoffset: 630;
  }
 }
-.chart circle{
- animation: line1 3s alternate infinite;
- animation: line1 3s forwards;
+
+.chart circle {
+ /* animation: line1 3s forwards; */
+ /* animation: line1 13s alternate infinite; */
 }
+
 /* forwards는 애니메이션 끝에서 정지 */
+
+@keyframes line2 {
+ from {
+  stroke-dashoffset: 630;
+ }
+
+ to {
+  stroke-dashoffset: 100;
+ }
+}
+
+.chart:nth-child(2) circle {
+ /* animation: line2 1s alternate infinite; */
+ stroke: red;
+}
+
+.chart:nth-child(3) circle {
+ /* animation: line2 4s alternate infinite; */
+ stroke: blue;
+}
+
+ul {
+ display: flex;
+ margin:30px;
+}
+ul>li{
+ border:1px solid;
+ text-align: center;
+ text-transform: uppercase;
+}
+ul>li>a {
+ padding: 10px;
+ display: block;
+ text-align: center;
+ background: pink;
+}
+
+/* 기본상태에서 영문글자가 나오고
+마우스올리면 한글글자가 나오게 하기 */
+/* 첫번째 글자만 보이고, 두번째 글자는 숨기고
+마우스올리면 첫번째 글자 숨기고, 두번째 글자
+보이게 한다. */
+ul>li>a>span:first-child{ display: block;}
+ul>li>a>span:last-child{ display: none;}
+ul>li>a:hover>span:first-child{ display: none;}
+ul>li>a:hover>span:last-child{ display: block;}
+ul{ width:500px;}
+ul>li{ flex:1;}
+
+ol{
+ display: flex;
+ margin:30px;
+}
